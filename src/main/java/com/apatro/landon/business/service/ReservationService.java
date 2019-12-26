@@ -72,4 +72,8 @@ public class ReservationService {
         return date;
     }
 
+    public List<Room> getAllRoomsInfo(){
+        return (List<Room>) roomRepository.findAll();
+    }
+
 }
